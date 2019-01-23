@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">IntroAndroidV2</string>
+    <string name="MainActivityName">My Main Activity</string>
+    <string name="SecondActivityName">My Second Activity</string>
     <string name="textView">Hello World!!</string>
     <string name="Button1">Button 1</string>
     <string name="Button2">Button 2</string>
