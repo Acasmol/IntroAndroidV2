@@ -6,4 +6,6 @@
     <string name="Button1">Button 1</string>
     <string name="Button2">Button 2</string>
     <string name="button2Pressed">Button two pressed</string>
+    <string name="Button3">Ok</string>
+    <string name="Button4">Second Activity</string>
 </resources>
