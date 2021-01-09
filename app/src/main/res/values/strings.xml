@@ -8,4 +8,6 @@
     <string name="button2Pressed">Button two pressed</string>
     <string name="Button3">Ok</string>
     <string name="Button4">Second Activity</string>
+    <string name="ThirdActivityName">Third Activity</string>
+    <string name="Button5">Third Activity</string>
 </resources>
