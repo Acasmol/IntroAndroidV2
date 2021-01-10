@@ -18,6 +18,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 {
     List<Item> listItems;
     private Context context; //The context represents the current app
+    private OnItemClickListener listener;
 
     public RecyclerViewAdapter(List<Item> listItems, Context context)
     {
@@ -42,7 +43,21 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         //The View will take the layout of item_layout
         View itemView = inflater.inflate(R.layout.item_layout, parent, false);
 
-        CustomViewHolder viewHolder = new CustomViewHolder(itemView);
+        final CustomViewHolder viewHolder = new CustomViewHolder(itemView);
+
+        itemView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                int position = viewHolder.getAdapterPosition();
+                if(listener != null)
+                {
+                    listener.onItemClick(listItems.get(position));
+                }
+            }
+        });
+
         return viewHolder;
     }
 
@@ -83,5 +98,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             itemTitle = (TextView)itemView.findViewById(R.id.itemTitle);
             itemDescription = (TextView)itemView.findViewById(R.id.itemDescriotion);
         }
+    }
+
+    public interface OnItemClickListener
+    {
+        public void onItemClick(Item item);
+    }
+
+    public void setOnItemListener(OnItemClickListener _listener)
+    {
+        listener = _listener;
     }
 }

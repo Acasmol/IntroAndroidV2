@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -23,7 +24,7 @@ public class ThirdActivity extends AppCompatActivity
         setContentView(R.layout.activity_third);
 
         /**
-         * Sort the collection depending of ther ID
+         * Sort the collection depending of their ID
          */
        Collections.sort(itemList, new Comparator<Item>() {
             @Override
@@ -33,7 +34,14 @@ public class ThirdActivity extends AppCompatActivity
         });
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter( itemList, this);
-
+        adapter.setOnItemListener(new RecyclerViewAdapter.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(Item item)
+            {
+                Toast.makeText(ThirdActivity.this, "Elemento pulsado: " + item.getItemId() + " " + item.getItemTitle(), Toast.LENGTH_SHORT).show();
+            }
+        });
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerViewItem);
         recyclerView.setAdapter(adapter);
     }
