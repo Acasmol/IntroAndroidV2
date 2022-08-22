@@ -45,7 +45,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         final CustomViewHolder viewHolder = new CustomViewHolder(itemView);
 
-        itemView.setOnClickListener(new View.OnClickListener()
+ /*       itemView.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -56,7 +56,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     listener.onItemClick(listItems.get(position));
                 }
             }
-        });
+        });*/
 
         return viewHolder;
     }

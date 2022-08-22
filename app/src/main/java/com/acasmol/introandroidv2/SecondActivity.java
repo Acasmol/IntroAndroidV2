@@ -26,6 +26,8 @@ public class SecondActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        Log.e(TAG, "onCreate: Activity Creating");
+
         final EditText textView2 = (EditText)findViewById(R.id.textView2);
 
         Button button3 = (Button)findViewById(R.id.button3);

@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.e(TAG, "onCreate: Activity Creating");
+
         //Abstracts the Button from the Layout (R.id) to an object Button
         Button button1 = (Button)findViewById(R.id.button);
         //Register the "OnClickViewListener()"

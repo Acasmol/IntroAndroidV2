@@ -23,6 +23,8 @@ public class ThirdActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
+        Log.e(TAG, "onCreate: Activity Creating");
+
         /**
          * Sort the collection depending of their ID
          */
@@ -34,14 +36,14 @@ public class ThirdActivity extends AppCompatActivity
         });
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter( itemList, this);
-        adapter.setOnItemListener(new RecyclerViewAdapter.OnItemClickListener()
+/*        adapter.setOnItemListener(new RecyclerViewAdapter.OnItemClickListener()
         {
             @Override
             public void onItemClick(Item item)
             {
                 Toast.makeText(ThirdActivity.this, "Elemento pulsado: " + item.getItemId() + " " + item.getItemTitle(), Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerViewItem);
         recyclerView.setAdapter(adapter);
     }
