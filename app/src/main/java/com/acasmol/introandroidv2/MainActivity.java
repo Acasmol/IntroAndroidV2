@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.e(TAG, "onCreate: Activity Creating");
+        Log.e(TAG, "onCreate: First Activity Creating");
 
         //Abstracts the Button from the Layout (R.id) to an object Button
         Button button1 = (Button)findViewById(R.id.button);
@@ -128,41 +128,41 @@ public class MainActivity extends AppCompatActivity
     protected void onStart()
     {
         super.onStart();
-        Log.e(TAG, "onStart: Activity Starting");
+        Log.e(TAG, "onStart: First Activity Starting");
     }
 
     @Override
     protected void onStop()
     {
         super.onStop();
-        Log.e(TAG, "onStop: Activty Stopping");
+        Log.e(TAG, "onStop: First Activity Stopping");
     }
 
     @Override
     protected void onDestroy()
     {
         super.onDestroy();
-        Log.e(TAG, "onDestroy: Activity Destroying");
+        Log.e(TAG, "onDestroy: First Activity Destroying");
     }
 
     @Override
     protected void onPause()
     {
         super.onPause();
-        Log.e(TAG, "onPause: Activity Pause");
+        Log.e(TAG, "onPause: First Activity Pause");
     }
 
     @Override
     protected void onResume()
     {
         super.onResume();
-        Log.e(TAG, "onResume: Activity Resume");
+        Log.e(TAG, "onResume: First Activity Resume");
     }
 
     @Override
     protected void onRestart()
     {
         super.onRestart();
-        Log.e(TAG, "onRestart: Activity Restarting");
+        Log.e(TAG, "onRestart: First Activity Restarting");
     }
 }

@@ -26,7 +26,7 @@ public class SecondActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        Log.e(TAG, "onCreate: Activity Creating");
+        Log.e(TAG, "onCreate: Second Activity Creating");
 
         final EditText textView2 = (EditText)findViewById(R.id.textView2);
 
@@ -64,41 +64,41 @@ public class SecondActivity extends AppCompatActivity
     protected void onStart()
     {
         super.onStart();
-        Log.e(TAG, "onStart: Activity Starting");
+        Log.e(TAG, "onStart: Second Activity Starting");
     }
 
     @Override
     protected void onStop()
     {
         super.onStop();
-        Log.e(TAG, "onStop: Activty Stopping");
+        Log.e(TAG, "onStop: Second Activty Stopping");
     }
 
     @Override
     protected void onDestroy()
     {
         super.onDestroy();
-        Log.e(TAG, "onDestroy: Activity Destroying");
+        Log.e(TAG, "onDestroy: Second Activity Destroying");
     }
 
     @Override
     protected void onPause()
     {
         super.onPause();
-        Log.e(TAG, "onPause: Activity Pause");
+        Log.e(TAG, "onPause: Second Activity Pause");
     }
 
     @Override
     protected void onResume()
     {
         super.onResume();
-        Log.e(TAG, "onResume: Activity Resume");
+        Log.e(TAG, "onResume: Second Activity Resume");
     }
 
     @Override
     protected void onRestart()
     {
         super.onRestart();
-        Log.e(TAG, "onRestart: Activity Restarting");
+        Log.e(TAG, "onRestart: Second Activity Restarting");
     }
 }

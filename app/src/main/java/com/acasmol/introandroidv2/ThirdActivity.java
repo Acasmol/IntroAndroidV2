@@ -23,7 +23,7 @@ public class ThirdActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        Log.e(TAG, "onCreate: Activity Creating");
+        Log.e(TAG, "onCreate: Third Activity Creating");
 
         /**
          * Sort the collection depending of their ID
@@ -56,41 +56,41 @@ public class ThirdActivity extends AppCompatActivity
     protected void onStart()
     {
         super.onStart();
-        Log.e(TAG, "onStart: Activity Starting");
+        Log.e(TAG, "onStart: Third Activity Starting");
     }
 
     @Override
     protected void onStop()
     {
         super.onStop();
-        Log.e(TAG, "onStop: Activty Stopping");
+        Log.e(TAG, "onStop: Third Activity Stopping");
     }
 
     @Override
     protected void onDestroy()
     {
         super.onDestroy();
-        Log.e(TAG, "onDestroy: Activity Destroying");
+        Log.e(TAG, "onDestroy: Third Activity Destroying");
     }
 
     @Override
     protected void onPause()
     {
         super.onPause();
-        Log.e(TAG, "onPause: Activity Pause");
+        Log.e(TAG, "onPause: Third Activity Pause");
     }
 
     @Override
     protected void onResume()
     {
         super.onResume();
-        Log.e(TAG, "onResume: Activity Resume");
+        Log.e(TAG, "onResume: Third Activity Resume");
     }
 
     @Override
     protected void onRestart()
     {
         super.onRestart();
-        Log.e(TAG, "onRestart: Activity Restarting");
+        Log.e(TAG, "onRestart: Third Activity Restarting");
     }
 }
